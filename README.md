@@ -27,9 +27,10 @@ After project setup, the folder structure should look like this:
   
 - **resources** → Contains all *XPaths* and *action methods* for each test case.  
 - **testcases** → Contains all *@Test* annotated methods that invoke resources and include the *basepath* to launch Chrome.  
-- **utils** → Contains *shared methods* like screenshot capture and reusable data handling.  
+- **utils** → Contains *shared methods* , *Screenshot class* for reusablity and maintenance.  
 - **screenshots** → Project-level folder to store captured screenshots.  
 - **testng.xml** → Used to execute all test cases together.
+- **.gitignore** → Excludes unwanted remote files being committed to git
 
 ---
 
