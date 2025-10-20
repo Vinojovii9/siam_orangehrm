@@ -1,7 +1,8 @@
 package tc_execution;
 import org.testng.annotations.Test;
 
-import resources.tc1_login;
+import resources.tc3_assign;
+import utils.ScreenshotUtil;
 
 
 public class tc3_assign_leave extends base_setup {
@@ -13,15 +14,15 @@ public class tc3_assign_leave extends base_setup {
 	 }
 	
 	@Test
-	void tc_execute() throws InterruptedException {
-		System.out.println("tc1");
-		tc1_login tc1 = new tc1_login(driver);
-		tc1.orangehrm_lauch();
-		tc1.creds();
-		tc1.login_button();
-		tc1.leave_menu();
-
-		
+	void assign_leave() throws InterruptedException {
+		System.out.println("tc3");
+		tc3_assign tc3 = new tc3_assign(driver);
+		tc3.assign("ad");
+		ScreenshotUtil.takeScreenshot(driver, "after_assign");
+		tc3.alertwindow();
+		ScreenshotUtil.takeScreenshot(driver, "after_alertwindow");
+		tc3.toast();
+		ScreenshotUtil.takeScreenshot(driver, "after_toast");
 	}
 	
 }

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +103,17 @@
                     <div class="method-list-content passed suite-Smoke_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Suite" title="tc_execution.tc2_apply_leave" class="method navigator-link" hash-for-method="tc2_exececute">tc2_exececute</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke_Suite" title="tc_execution.tc2_apply_leave" class="method navigator-link" hash-for-method="apply_leaves">apply_leaves</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Suite" title="tc_execution.tc1_login_leave" class="method navigator-link" hash-for-method="tc_execute">tc_execute</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Smoke_Suite" title="tc_execution.tc3_assign_leave" class="method navigator-link" hash-for-method="assign_leave">assign_leave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="tc_execution.tc1_login_leave" class="method navigator-link" hash-for-method="login_leave_menu">login_leave_menu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Smoke_Suite -->
@@ -131,9 +136,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_execute">
-                  </a> <!-- tc_execute -->
-                  <span class="method-name">tc_execute</span>
+                  <a name="login_leave_menu">
+                  </a> <!-- login_leave_menu -->
+                  <span class="method-name">login_leave_menu</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,9 +151,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc2_exececute">
-                  </a> <!-- tc2_exececute -->
-                  <span class="method-name">tc2_exececute</span>
+                  <a name="apply_leaves">
+                  </a> <!-- apply_leaves -->
+                  <span class="method-name">apply_leaves</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Smoke_Suite-class-passed -->
+          <div class="suite-Smoke_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tc_execution.tc3_assign_leave</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="assign_leave">
+                  </a> <!-- assign_leave -->
+                  <span class="method-name">assign_leave</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,12 +183,13 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Smoke Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;tc1&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Smoke test case&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tc_execution.tc1_login_leave&quot;/&gt;
       &lt;class name=&quot;tc_execution.tc2_apply_leave&quot;/&gt;
+      &lt;class name=&quot;tc_execution.tc3_assign_leave&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- tc1 --&gt;
+  &lt;/test&gt; &lt;!-- Smoke test case --&gt;
 &lt;/suite&gt; &lt;!-- Smoke Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,7 +201,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">tc1 (2 classes)</span>
+                <span class="test-name">Smoke test case (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,20 +227,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc_execute')
-data.setCell(0, 2, 'tc_execution.tc1_login_leave')
-data.setCell(0, 3, 8953);
+data.setCell(0, 1, 'assign_leave')
+data.setCell(0, 2, 'tc_execution.tc3_assign_leave')
+data.setCell(0, 3, 15256);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc2_exececute')
-data.setCell(1, 2, 'tc_execution.tc2_apply_leave')
-data.setCell(1, 3, 1314);
+data.setCell(1, 1, 'login_leave_menu')
+data.setCell(1, 2, 'tc_execution.tc1_login_leave')
+data.setCell(1, 3, 7938);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'apply_leaves')
+data.setCell(2, 2, 'tc_execution.tc2_apply_leave')
+data.setCell(2, 3, 1573);
 window.suiteTableData['Smoke_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Smoke_Suite">
               </div> <!-- times-div-Smoke_Suite -->
             </div> <!-- times-div -->
@@ -234,11 +259,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Smoke_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tc_execution.tc2_apply_leave</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+                <span class="ignored-method-name">setUpSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tc_execution.tc3_assign_leave</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUpSuite</span>
                 <br/>
@@ -260,22 +294,29 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">tc_execute</span>
-                <span class="method-start">5949 ms</span>
+                <span class="method-name">login_leave_menu</span>
+                <span class="method-start">5637 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tc_execution.tc2_apply_leave</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">tc2_exececute</span>
-                <span class="method-start">14905 ms</span>
+                <span class="method-name">apply_leaves</span>
+                <span class="method-start">13580 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tc_execution.tc3_assign_leave</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">assign_leave</span>
+                <span class="method-start">15153 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tc_execution.tc1_login_leave</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownSuite</span>
-                <span class="method-start">16254 ms</span>
+                <span class="method-start">30420 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

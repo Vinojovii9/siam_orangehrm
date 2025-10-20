@@ -3,13 +3,13 @@
 <suite name="Failed suite [Smoke Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="tc1(failed)">
     <classes>
-      <class name="resources.tc2_apply_leave">
+      <class name="tc_execution.tc3_assign_leave">
         <methods>
           <include name="tearDownSuite"/>
+          <include name="tc_execute"/>
           <include name="setUpSuite"/>
-          <include name="tc2_exececute"/>
         </methods>
-      </class> <!-- resources.tc2_apply_leave -->
+      </class> <!-- tc_execution.tc3_assign_leave -->
     </classes>
   </test> <!-- tc1(failed) -->
 </suite> <!-- Failed suite [Smoke Suite] -->

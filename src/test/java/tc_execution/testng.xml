@@ -6,10 +6,11 @@
 		<listener class-name="orange_tng.tc1_login_leave"/>
 	</listeners> -->
 
-  <test thread-count="5" name="tc1">
+  <test thread-count="5" name="Smoke test case">
     <classes>
       <class name="tc_execution.tc1_login_leave"/>
        <class name="tc_execution.tc2_apply_leave"/>
+       <class name="tc_execution.tc3_assign_leave"></class>
   </classes>
   </test> <!-- Test -->
   </suite> <!-- Suite -->
