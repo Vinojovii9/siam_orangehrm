@@ -23,27 +23,7 @@ Ensure the following software is installed on your system:
 
 After project setup, the folder structure should look like this:
 
-OrangeHRM-Web-Automation/
-│
-├── pom.xml
-├── testng.xml
-├── /src
-│ └── /test
-│ └── /java
-│ ├── resources/
-│ │ ├── locators.java
-│ │ ├── actionMethods.java
-│ │ └── pageObjects.java
-│ │
-│ ├── testcases/
-│ │ ├── loginTest.java
-│ │ ├── leaveApplyTest.java
-│ │ └── baseClass.java
-│ │
-│ └── utils/
-│ ├── screenshotUtil.java
-  └── sharedData.java
-
+<img width="279" height="419" alt="Screenshot 2025-10-21 at 3 24 51 AM" src="https://github.com/user-attachments/assets/85f93e27-44d9-4d77-9fc1-d7f63576457f" />
   
 - **resources** → Contains all *XPaths* and *action methods* for each test case.  
 - **testcases** → Contains all *@Test* annotated methods that invoke resources and include the *basepath* to launch Chrome.  
@@ -110,7 +90,7 @@ Follow these steps to connect your Eclipse project with a **GitHub remote reposi
       git commit -m "commit message"
 >> 5. git push origin main -f   
 
-### **Execution**
+### **5. Execution**
 > 1. Run all test cases through testng.xml file.
 > 2. Ensure ChromeDriver path and configurations are correctly set in the base class.
 > 3. Captured screenshots will be stored inside the /screenshots folder at the project level.
