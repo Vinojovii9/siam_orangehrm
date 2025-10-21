@@ -30,6 +30,7 @@ After project setup, the folder structure should look like this:
 - **utils** → Contains *shared methods* , *Screenshot class* for reusablity and maintenance.  
 - **screenshots** → Project-level folder to store captured screenshots.  
 - **testng.xml** → Used to execute all test cases together.
+- **test-outpu** → capture the logs and reports.
 - **.gitignore** → Excludes unwanted remote files being committed to git
 
 ---
