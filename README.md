@@ -23,8 +23,8 @@ Ensure the following software is installed on your system:
 
 After project setup, the folder structure should look like this:
 
-<img width="279" height="419" alt="Screenshot 2025-10-21 at 3 24 51 AM" src="https://github.com/user-attachments/assets/85f93e27-44d9-4d77-9fc1-d7f63576457f" />
-  
+<img width="385" height="563" alt="Screenshot 2025-10-21 at 11 48 28 AM" src="https://github.com/user-attachments/assets/0d5d38d3-3ce4-4242-8af7-abf298f2954f" />
+
 - **resources** → Contains all *XPaths* and *action methods* for each test case.  
 - **testcases** → Contains all *@Test* annotated methods that invoke resources and include the *basepath* to launch Chrome.  
 - **utils** → Contains *shared methods* , *Screenshot class* for reusablity and maintenance.  
@@ -48,26 +48,57 @@ Add the following dependencies to your `pom.xml` file:
         <version>4.25.0</version>
     </dependency>
 
-    <!-- TestNG -->
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>7.10.2</version>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
         <scope>test</scope>
-    </dependency>
+      </dependency>
+    
+    <!-- Match the version used by TestNG or your SLF4J APIs -->
+      <dependency>
+  	    <groupId>org.slf4j</groupId>
+  	    <artifactId>slf4j-simple</artifactId>
+  	    <version>2.0.13</version> 
+  	  </dependency>
 
-    <!-- WebDriver Manager -->
-    <dependency>
-        <groupId>io.github.bonigarcia</groupId>
-        <artifactId>webdrivermanager</artifactId>
-        <version>5.8.0</version>
-    </dependency>
-
-    <!-- Apache Commons IO (for screenshots) -->
-    <dependency>
-        <groupId>commons-io</groupId>
-        <artifactId>commons-io</artifactId>
-        <version>2.16.1</version>
+    
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+    	<dependency>
+    	    <groupId>com.aventstack</groupId>
+    	    <artifactId>extentreports</artifactId>
+    	    <version>5.1.2</version>
+    	</dependency>
+        
+    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+    	<dependency>
+    	    <groupId>org.apache.logging.log4j</groupId>
+    	    <artifactId>log4j-core</artifactId>
+    	    <version>3.0.0-beta3</version>
+    	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+    	<dependency>
+    	    <groupId>org.apache.logging.log4j</groupId>
+    	    <artifactId>log4j-api</artifactId>
+    	    <version>3.0.0-beta2</version>
+    	</dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+    	<dependency>
+    	    <groupId>org.apache.logging.log4j</groupId>
+    	    <artifactId>log4j-slf4j-impl</artifactId>
+    	    <version>3.0.0-beta2</version>
+    	    <scope>compile</scope>
+    	</dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.11.0</version>
+	    <scope>test</scope>
+	</dependency>
     </dependency>
 >> </dependencies>
 
